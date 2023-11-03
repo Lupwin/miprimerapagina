@@ -1,0 +1,237 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x:hidden;
+    
+    background-color: lightblue;}
+
+.logo{
+    height: 30%;
+    width: 30%;
+    
+    
+}
+
+header{
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-size:  100% 500%;
+    background-image: url('img/fondo9.jpeg');
+    background-repeat: no-repeat;
+    background-position: center 47%; /* Centra la imagen en el fondo */
+    height: 120px;
+    padding-top: 100;
+}
+    
+
+header a img {
+    padding: 0.5em;
+}
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+ /* Estilo para el contenido principal */
+main {
+    padding: 20px; /* Agrega espaciado alrededor del contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    width: 100%;
+}
+.parrafo-nosotros{
+    font-size: 20px;
+    padding-right: 5%;
+    text-align: justify;
+    
+}
+.parrafo-nosotros2{
+    font-size: 15px;
+    margin-right: 15px;
+    display: inline-block;
+}
+.contenedor-parrafo{
+    display: flex;
+}
+
+
+/* Estilo para el pie de página */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.footer span {
+    margin-right: 20px; /* Espacio entre los elementos del pie de página */
+}
+div h2 {
+    color: blue;
+
+}
+/* .nav {
+    display: flex;
+    background-color: #3a3a3a;
+    align-items: center;
+    justify-content: f;    
+    padding-right: 30px;
+    
+}*/
+
+nav ul {
+    display: flex;
+    gap: 1.1em;
+    padding-right: 8em;
+}
+
+.section-nosotros{
+    display:flex;
+    justify-content:space-between ;
+   
+}
+.img-portada{
+    position: relative;
+    margin-top: 5%;
+    margin-right: 2%;
+   
+    
+} 
+.productos {
+    display: flex;
+    flex-wrap:wrap;
+    padding-left: 10%;
+    
+    
+    
+
+
+}
+.producto {
+    width: 25%; /* Tamaño fijo para cada producto */
+    border: 5px solid blue;
+    border-radius: 5%; /* Borde redondeado para crear la forma circular */
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+  
+    
+}
+#check{
+    display: none;
+}
+.checkbtn {
+    font-size: 25px;
+    color: red;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.div-formulario{
+    display:flex;
+    justify-content: center;
+    border: solid blue;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    width:50%;
+    margin-left: 25%;
+    min-width: 550px;
+    max-width: 900px;
+
+}
+.input{
+    width: 500px;
+}
+
+ @media (max-width: 768px) {
+ 
+    header {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 47%; /* Centra la imagen en el fondo */
+        height: 120px;
+        padding-top: 100;
+        min-width: 100%;
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+    .section-nosotros{
+        display:flex;
+        justify-content:space-between ;
+    }
+    div h2 {
+        text-align: center;
+    }
+ 
+    .producto {
+        width: 35%; /* Tamaño fijo para cada producto */
+        justify-content: space-evenly;
+        margin: 10px;
+        
+        
+      }
+    .contenedor-parrafo{
+        display: block;
+    }
+    .parrafo-nosotros{
+        flex: none;
+        width: 80%;}
+    .checkbtn{
+        display: block;
+    }
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: grey;
+        text-align: center;
+        top: 100px;
+        left: 100%;
+        transition:  all 0.5s;
+        padding-top: 20px;
+    }
+    #check:checked ~ ul {
+        left: 0;
+        display: block;
+    }
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #encabezado nav ul li a {
+        
+        font-size: 20px;
+    }
+
+    #check:checked ~ .checkbtn {
+        color: #333;
+    }
+    .input{
+        width: 300px;
+    }
+    .div-formulario{
+        min-width: 520px;
+    }
+    
+ 
+}
